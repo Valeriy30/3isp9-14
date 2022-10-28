@@ -1,0 +1,18 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+    }
+}
+rootProject.name = "KonX2"
+include ':app'
+include ':p0041basicviews'
+include ':p0051layoutfiles'
+include ':p0061_layouts'
+include ':p0072_layoutprop'
+include ':p005_viewbyid'
+include ':p0091_onclickbuttons'
+include ':p0101_listener'
+include ':p0102_activitylistener'

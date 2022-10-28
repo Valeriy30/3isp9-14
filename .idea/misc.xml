@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/cor.xml" value="0.425" />
+        <entry key="app/src/main/res/drawable/fon.xml" value="0.3859375" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="p0041basicviews/src/main/res/layout/activity_p0041basicviews.xml" value="0.37395833333333334" />
+        <entry key="p0051layoutfiles/src/main/res/layout-land/myscreen.xml" value="0.3165784832451499" />
+        <entry key="p0051layoutfiles/src/main/res/layout/activity_main.xml" value="0.3411458333333333" />
+        <entry key="p0051layoutfiles/src/main/res/layout/myscreen.xml" value="0.335" />
+        <entry key="p0051layoutfiles/src/main/res/layout/window.xml" value="0.4671875" />
+        <entry key="p005_viewbyid/src/main/res/layout/activity_main.xml" value="0.5171875" />
+        <entry key="p0061_layouts/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="p0061_layouts/src/main/res/layout/alayout.xml" value="0.35520833333333335" />
+        <entry key="p0061_layouts/src/main/res/layout/rlayout.xml" value="0.43697916666666664" />
+        <entry key="p0061_layouts/src/main/res/layout/tlayout.xml" value="0.5" />
+        <entry key="p0072_layoutprop/src/main/res/drawable/round.xml" value="0.5333333333333333" />
+        <entry key="p0072_layoutprop/src/main/res/layout/activity_main.xml" value="0.4432291666666667" />
+        <entry key="p0072_layoutprop/src/main/res/layout/grlayout.xml" value="0.4432291666666667" />
+        <entry key="p0072_layoutprop/src/main/res/layout/marginlayout.xml" value="0.4432291666666667" />
+        <entry key="p0072_layoutprop/src/main/res/layout/reg.xml" value="0.4432291666666667" />
+        <entry key="p0072_layoutprop/src/main/res/layout/reg2.xml" value="0.5171875" />
+        <entry key="p0091_onclickbuttons/src/main/res/layout/activity_main.xml" value="0.453125" />
+        <entry key="p0101_listener/src/main/res/layout/activity_main.xml" value="0.4671875" />
+        <entry key="p0102_activitylistener/src/main/res/layout/activity_main.xml" value="0.375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
