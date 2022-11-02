@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        editTextTextEmailAddress=(EditText) findViewById(R.id.editTextTextEmailAddress);
+        editTextTextPassword=(EditText) findViewById(R.id.editTextTextPassword);
         tvOut = (TextView) findViewById(R.id.tvOut);
         btnOk = (Button) findViewById(R.id.btnOk);
         btnCancel = (Button) findViewById(R.id.btnCancel);
@@ -36,9 +38,8 @@ public class MainActivity extends AppCompatActivity {
         View.OnClickListener oclBtnCancel = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String a= editTextTextEmailAddress.getText().toString();
-                String b= editTextTextPassword.getText().toString();
-                if (a== "admin" && b == "admin")
+
+                if (editTextTextEmailAddress.getText().toString().equals("admin") && editTextTextPassword.getText().toString().equals("admin"))
                 {
                     tvOut.setText("Авторизация пройдена");
 
@@ -56,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         };
 
         btnCancel.setOnClickListener(oclBtnCancel);
-
+///////
 
     }
 }
