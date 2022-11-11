@@ -26,6 +26,9 @@
         <entry key="p0091_onclickbuttons/src/main/res/layout/activity_main.xml" value="0.453125" />
         <entry key="p0101_listener/src/main/res/layout/activity_main.xml" value="0.4671875" />
         <entry key="p0102_activitylistener/src/main/res/layout/activity_main.xml" value="0.375" />
+        <entry key="p0111_resvalues/src/main/res/drawable/ic_launcher_background.xml" value="0.48333333333333334" />
+        <entry key="p0111_resvalues/src/main/res/layout/activity_main.xml" value="0.4671875" />
+        <entry key="sharedpreferences/src/main/res/layout/activity_main.xml" value="0.503125" />
       </map>
     </option>
   </component>

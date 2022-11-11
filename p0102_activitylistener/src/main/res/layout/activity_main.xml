@@ -30,7 +30,7 @@
                 android:layout_gravity="center_horizontal"
                 android:id="@+id/btnOk"
                 android:text="OK"
-                android:onClick="onClickStart"
+
                 android:layout_width="100dp">
             </Button>
             <Button
