@@ -21,24 +21,32 @@
 
             <requestFocus></requestFocus>
         </EditText>
+        <EditText
+            android:id="@+id/etText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <requestFocus></requestFocus>
+        </EditText>
+
 
         <LinearLayout
             android:id="@+id/linearLayout1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
             <Button
                 android:id="@+id/btnSave"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Save"></Button>
+                android:text="Запомнить меня"></Button>
 
             <Button
                 android:id="@+id/btnLoad"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Load"></Button>
+                android:text="Вставить сохранённые данные"></Button>
         </LinearLayout>
     </LinearLayout>
 

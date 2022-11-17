@@ -9,30 +9,23 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
-
-public class p0041basicviews extends Activity implements OnClickListener {
-    EditText etText;
+public class p0041basicviews extends Activity implements OnClickListener  {
+    EditText etText,etText1;
     Button btnSave, btnLoad;
-
     SharedPreferences sPref;
-
     final String SAVED_TEXT = "saved_text";
-
+    final String SAVED_TEXT1 = "saved";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_p0041basicviews);
         etText = (EditText) findViewById(R.id.etText);
-
+        etText1 = (EditText) findViewById(R.id.etText1);
         btnSave = (Button) findViewById(R.id.btnSave);
         btnSave.setOnClickListener(this);
-
         btnLoad = (Button) findViewById(R.id.btnLoad);
         btnLoad.setOnClickListener(this);
-        loadText();
     }
-    @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btnSave:
@@ -45,25 +38,27 @@ public class p0041basicviews extends Activity implements OnClickListener {
                 break;
         }
     }
-
     void saveText() {
         sPref = getPreferences(MODE_PRIVATE);
         Editor ed = sPref.edit();
         ed.putString(SAVED_TEXT, etText.getText().toString());
+        Editor ed1 = sPref.edit();
+        ed1.putString(SAVED_TEXT1, etText1.getText().toString());
         ed.commit();
+        ed1.commit();
         Toast.makeText(this, "Text saved", Toast.LENGTH_SHORT).show();
-
     }
-
     void loadText() {
         sPref = getPreferences(MODE_PRIVATE);
         String savedText = sPref.getString(SAVED_TEXT, "");
+        String savedText1 = sPref.getString(SAVED_TEXT1, "");
         etText.setText(savedText);
+        etText1.setText(savedText1);
+
         Toast.makeText(this, "Text loaded", Toast.LENGTH_SHORT).show();
     }
     protected void onDestroy() {
         super.onDestroy();
         saveText();
     }
-
 }
