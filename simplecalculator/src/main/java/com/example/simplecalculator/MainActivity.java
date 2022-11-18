@@ -1,4 +1,4 @@
-package com.example.p0041basicviews;
+package com.example.simplecalculator;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.view.Menu;
 
-public class p0041basicviews extends Activity implements OnClickListener  {
+public class MainActivity extends Activity implements OnClickListener {
     final int MENU_RESET_ID = 1;
     final int MENU_QUIT_ID = 2;
 
@@ -21,84 +21,34 @@ public class p0041basicviews extends Activity implements OnClickListener  {
 
     Button btnAdd;
     Button btnSub;
-    Button btnMulti;
+    Button btnMult;
     Button btnDiv;
-    Button btnEq;
-    Button btn1;
-    Button btn2;
-    Button btn3;
-    Button btn4;
-    Button btn5;
-    Button btn6;
-    Button btn7;
-    Button btn8;
-    Button btn9;
-    Button btn0;
-    Button btnLeft;
-    Button btnRight;
-    Button btnDot;
-    Button btnDel;
-    Button btnC;
-
-
 
     TextView tvResult;
 
     String oper = "";
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_p0041basicviews);
+        setContentView(R.layout.activity_main);
         // находим элементы
         etNum1 = (EditText) findViewById(R.id.etNum1);
         etNum2 = (EditText) findViewById(R.id.etNum2);
 
         btnAdd = (Button) findViewById(R.id.btnAdd);
         btnSub = (Button) findViewById(R.id.btnSub);
-        btnMulti = (Button) findViewById(R.id.btnMult);
+        btnMult = (Button) findViewById(R.id.btnMult);
         btnDiv = (Button) findViewById(R.id.btnDiv);
-        btnEq = (Button) findViewById(R.id.btnEq);
-
-        btn1 = (Button) findViewById(R.id.btn1);
-        btn2 = (Button) findViewById(R.id.btn2);
-        btn3 = (Button) findViewById(R.id.btn3);
-        btn4 = (Button) findViewById(R.id.btn4);
-        btn5 = (Button) findViewById(R.id.btn5);
-        btn6 = (Button) findViewById(R.id.btn6);
-        btn7 = (Button) findViewById(R.id.btn7);
-        btn8 = (Button) findViewById(R.id.btn8);
-        btn9 = (Button) findViewById(R.id.btn9);
-        btn0 = (Button) findViewById(R.id.btn0);
-        btnRight = (Button) findViewById(R.id.btnRight);
-        btnLeft = (Button) findViewById(R.id.btnLeft);
-        btnDot = (Button) findViewById(R.id.btnDot);
-        btnC = (Button) findViewById(R.id.btnC);
-        btnDel = (Button) findViewById(R.id.btnDel);
-
 
         tvResult = (TextView) findViewById(R.id.tvResult);
 
         // прописываем обработчик
         btnAdd.setOnClickListener(this);
         btnSub.setOnClickListener(this);
-        btnMulti.setOnClickListener(this);
+        btnMult.setOnClickListener(this);
         btnDiv.setOnClickListener(this);
-        btnEq.setOnClickListener(this);
-        btn1.setOnClickListener(this);
-        btn2.setOnClickListener(this);
-        btn3.setOnClickListener(this);
-        btn4.setOnClickListener(this);
-        btn5.setOnClickListener(this);
-        btn6.setOnClickListener(this);
-        btn7.setOnClickListener(this);
-        btn8.setOnClickListener(this);
-        btn9.setOnClickListener(this);
-        btn0.setOnClickListener(this);
-        btnRight.setOnClickListener(this);
-        btnLeft.setOnClickListener(this);
-        btnDot.setOnClickListener(this);
-        btnDel.setOnClickListener(this);
-        btnC.setOnClickListener(this);
 
     }
 // создание меню
@@ -123,7 +73,6 @@ public class p0041basicviews extends Activity implements OnClickListener  {
                 // выход из приложения
                 finish();
                 break;
-
         }
         return super.onOptionsItemSelected(item);
     }
@@ -163,8 +112,6 @@ public class p0041basicviews extends Activity implements OnClickListener  {
                 oper = "/";
                 result = num1 / num2;
                 break;
-            case R.id.btnEq:
-
             default:
                 break;
         }
@@ -173,4 +120,5 @@ public class p0041basicviews extends Activity implements OnClickListener  {
         // формируем строку вывода
         tvResult.setText(num1 + " " + oper + " " + num2 + " = " + result);
     }
+
 }
